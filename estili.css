@@ -142,7 +142,7 @@ body::before {
     min-width: 240px;             /* Establece un tamaño mínimo para el botón */
     font-size: 19px;              /* Tamaño de fuente */
     margin: 5px auto;             /* Centra el botón y le da margen arriba y abajo */
-    padding: 10px 25px;           /* Espaciado interno del botón */
+    padding: 15px 25px;           /* Espaciado interno del botón */
     width: auto;                  /* El ancho depende del contenido */
     max-width: 250px;             /* Establece el ancho máximo */
     transition: 0.2s;             /* Añade una transición suave para el hover */
@@ -153,7 +153,7 @@ body::before {
   border: 2px solid #fff;              /* Borde blanco al hacer hover */
   color: #fff;                         /* Texto blanco al hacer hover */
   margin: 5px auto;                    /* Mantén el margen automático para centrarlo */
-  padding: 10px 25px;                  /* Espaciado interno del botón */
+  padding: 15px 25px;                  /* Espaciado interno del botón */
   width: auto;                         /* El ancho depende del contenido */
   max-width: 250px;                    
   border-radius: 8px; 
@@ -302,7 +302,34 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
-.botonesAmazon {
+.botonesDiscord{
+    cursor: pointer;
+    background-color: #5964f2;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 29px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.imageniwiDiscord{
+    max-width: 75px;
+    margin: 5px 7px;
+}
+.botonesDiscord:hover{
+    background-color: #5862e4;
+}
+.botonesDiscord:active{
+    background-color: #545dd5;
+    transform: scale(0.98);
+}
+.botonesMediafire{
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
@@ -311,6 +338,34 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     justify-content: center;
     text-decoration: none;
     padding: 29px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.imageniwiMediafire{
+    max-width: 85px;
+    margin: 10px 8px;
+}
+.botonesMediafire:hover {
+    background-color:  #f3f1f1;
+}
+.botonesMediafire:active{
+    background-color:  #cdcaca;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.botonesAmazon {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 30px 5px;
     font-size: 19px;
     text-align: left;
     margin: 20px 75px;
@@ -328,7 +383,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .imageniwiAmazon{
     max-width: 75px;
-    margin: 18px 14px 18px 0px ;
+    margin: 20px 14px 20px 0px ;
 }
 
 .imageniwiPaypal{
