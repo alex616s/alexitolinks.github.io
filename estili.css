@@ -1,0 +1,366 @@
+html, body {
+    height: 100%; /* Asegura que html y body cubran toda la pantalla */
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    position: relative; /* Todo el contenido debe estar por encima de la capa */
+    z-index: 2;
+    text-align: center;
+    color: #FFFFFF;
+   font-family: Merriweather-Bold;
+   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+@font-face {
+    font-family: Merriweather-Bold;
+    src: url(fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+    font-family: Clint Marker;
+    src: url(fonts/Clint\ Marker.ttf);
+}
+
+body {
+    background-image: url("IMG/fondog.png");
+    width: 100%;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Escala la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen en la página */
+    background-attachment: fixed; /* Hace que la imagen de fondo quede fija al hacer scroll */
+    margin: 0; /* Elimina márgenes por defecto del body */
+    padding: 0; /* Elimina padding por defecto del body */
+    height: 100vh;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    z-index: 1; /* La capa negra */
+    pointer-events: none;
+}
+
+.logo{
+    margin-top: 35px;
+    max-width: 290px;
+    height: auto;
+    text-align: center;
+    box-shadow: 
+    0 0 15px 5px rgba(192, 192, 192, 0.5), 
+    0 0 20px 10px rgba(211, 211, 211, 0.4), 
+    0 0 30px 10px rgba(245, 245, 245, 0.3); 
+    border-radius: 160px; 
+}
+
+.LX{
+    text-align: center;
+    font-size: 41px;
+    text-decoration: none;
+}
+.Lexsound:hover{
+        font-family: Clint Marker;
+        text-transform: uppercase;
+        font-size: 43px;
+        letter-spacing: 0.061em;
+    
+}
+.S:hover{
+    font-family: Clint Marker;
+    color: rgb(130, 44, 43);
+    text-transform: uppercase;
+    font-size: 52px;
+    letter-spacing: 0.061em;
+}
+.saluu{
+    font-size: 20px;
+
+}
+
+.botonsiwi {
+    min-width: 210px;
+    max-width: 1250px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    padding: 15px 5px;
+    font-size: 19px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgb(247, 238, 238);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
+    width: auto;
+    margin: 20px auto; /* Asegura que el botón esté centrado */
+    transition: background-color 0.10s;
+}
+.botonsiwi:hover {
+    background-color: #e8dfdf;
+}
+.botonsiwi:active{
+    background-color: #c4bbbb; 
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6); /* Efecto presionado */
+    transform: scale(0.98);
+}
+
+.links {
+    margin-top: 41px;
+    text-align: center;
+}
+.portfolio{
+    background-color: rgba(92, 64, 51, 0.85);
+    padding: 10px 20px;
+    margin: 20px 68px; /* Margen vertical y horizontal */
+    border-radius: 15px;
+    width:auto;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.722);
+   font-size: 16px;
+}
+.speech{
+    font-size: 15px;
+}
+.logolinks {
+    max-width: 62px;
+    height: 62px;
+    margin-right: 40px;
+}
+.mimail{
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    min-width: 240px;             /* Establece un tamaño mínimo para el botón */
+    font-size: 19px;              /* Tamaño de fuente */
+    margin: 5px auto;             /* Centra el botón y le da margen arriba y abajo */
+    padding: 10px 25px;           /* Espaciado interno del botón */
+    width: auto;                  /* El ancho depende del contenido */
+    max-width: 250px;             /* Establece el ancho máximo */
+    transition: 0.2s;             /* Añade una transición suave para el hover */
+ /* Asegura que el botón se ajuste al contenido */
+}
+.mimail:hover{
+    background: rgba(50, 50, 50, 0.6);  /* Efecto de fondo semi-transparente */
+  border: 2px solid #fff;              /* Borde blanco al hacer hover */
+  color: #fff;                         /* Texto blanco al hacer hover */
+  margin: 5px auto;                    /* Mantén el margen automático para centrarlo */
+  padding: 10px 25px;                  /* Espaciado interno del botón */
+  width: auto;                         /* El ancho depende del contenido */
+  max-width: 250px;                    
+  border-radius: 8px; 
+}
+
+.mimail img{
+    margin-right: 7px;
+    filter:  invert(100%);
+    max-width: 42px;
+    vertical-align: -8px;
+}
+.mimail:active{
+    transform: scale(0.98);
+}
+.nota{
+    line-height: 1.2em;
+    font-size: 16px;
+    border-left: 8px solid #d32f2f; /* Rojo oscuro */
+    padding-left: 10px;
+    font-style: italic;
+    display: block;  /* Asegura que ocupe una línea completa */
+    margin: 10px 0;
+}
+.notiwi{
+    max-width: 600px; /* Ajusta el ancho según lo necesites */
+    margin: 0 auto;  /* Centra el contenedor si es necesario */
+}
+.socials{
+    display: block;
+
+}
+.botonesX{
+    cursor: pointer;
+background-color: rgb(29, 28, 28);
+color:#ffffff;
+text-shadow: #cac7c7;
+display: flex;
+align-items: center; /* Centra verticalmente */
+justify-content: center;
+text-decoration: none;
+padding: 10px 5px;
+font-size: 19px;
+text-align: left;
+margin: 20px 75px;
+width: auto;
+border-radius: 20px;
+box-shadow: 2px 4px 4px rgba(213, 212, 212, 0.468), 1px -3px 2px rgba(220, 214, 214, 0.722);
+
+}
+.botonesX:hover {
+    background-color: #272121;
+}
+.botonesX:active{
+    background-color: #000000; 
+    box-shadow: inset 0px 3px 6px rgba(130, 130, 130, 0.6); /* Efecto presionado */
+    transform: scale(0.98);
+}
+
+.imageniwi{
+    max-width: 60px;
+    margin: 20px 20px;
+}
+
+.botonesIG{
+    cursor: pointer;
+background-color: rgba(233, 12, 163,1);
+background: linear-gradient(150deg, #a800d2fb,#ffae3c);
+display: flex;
+align-items: center; /* Centra verticalmente */
+justify-content: center;
+text-decoration: none;
+padding: 10px 5px;
+font-size: 19px;
+text-align: left;
+margin: 20px 75px;
+width: auto;
+border-radius: 20px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.botonesIG:hover {
+    background-color: rgb(246, 75, 192);
+}
+.botonesIG:active{
+    background-color: rgb(202, 2, 139); 
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+
+.botonesYT{
+    cursor: pointer;
+    background-color: #ffffff;
+    /*#dd2c28;*/
+    color: #000000;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+    background: linear-gradient(150deg, #ffffff,#ff3939);
+}
+.botonesYT:hover {
+    background-color: rgb(202, 198, 198);
+}
+.botonesYT:active{
+    background-color: rgb(255, 205, 205); 
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.imageniwiYT{
+    max-width: 65px;
+    margin: 20px 20px;
+}
+
+.imageniwiMPago{
+    max-width: 85px;
+    margin: 20px 8px;
+}
+.botonesMPago{
+    cursor: pointer;
+    background-color: #039dda;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+
+}
+.botonesMPago:hover {
+    background-color: #0498d2;
+}
+.botonesMPago:active{
+    background-color: #0388bd;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.botonesAmazon {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 29px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.botonesAmazon:hover {
+    background-color:  #f3f1f1;
+}
+.botonesAmazon:active{
+    background-color:  #cdcaca;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.imageniwiAmazon{
+    max-width: 75px;
+    margin: 18px 14px 18px 0px ;
+}
+
+.imageniwiPaypal{
+    max-width: 63px;
+    margin: 15px 10px 15px 0px;
+    display: flex;
+    justify-content: left;
+}
+.botonesPaypal {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 18px 5px;
+    font-size: 19px;
+    text-align: left;
+    margin: 20px 75px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.botonesPaypal:hover {
+    background-color:  #f3f1f1;
+}
+.botonesPaypal:active{
+    background-color:  #cdcaca;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.foot{
+    margin: 121px;
+}
