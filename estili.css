@@ -32,6 +32,7 @@ body {
     padding: 0; /* Elimina padding por defecto del body */
     height: 100vh;
     position: relative;
+    
 }
 body::before {
     content: '';
@@ -59,7 +60,7 @@ body::before {
 
 .LX{
     text-align: center;
-    font-size: 41px;
+    font-size: 42px;
     text-decoration: none;
 }
 .Lexsound:hover{
@@ -77,19 +78,19 @@ body::before {
     letter-spacing: 0.061em;
 }
 .saluu{
-    font-size: 20px;
+    font-size: clamp(1.120rem,1.2vw,20px);
 
 }
 
 .botonsiwi {
-    min-width: 210px;
-    max-width: 1250px;
+    min-width: 225px;
+    max-width: 950px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-decoration: none; /* Quita el subrayado del enlace */
-    padding: 15px 5px;
+    padding: 17px 8px;
     font-size: 19px;
     text-align: left;
     color: rgba(0, 0, 0, 1);
@@ -115,16 +116,19 @@ body::before {
     text-align: center;
 }
 .portfolio{
+    min-width: 225px;
+    max-width: 1220px;
     background-color: rgba(92, 64, 51, 0.85);
     padding: 10px 20px;
-    margin: 20px 68px; /* Margen vertical y horizontal */
+    margin: 20px 125px; /* Margen vertical y horizontal */
     border-radius: 15px;
     width:auto;
    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.722);
    font-size: 16px;
+   text-align: center;
 }
 .speech{
-    font-size: 15px;
+    font-size:clamp(13px,1.2vw,16px); /*15px;*/
 }
 .logolinks {
     max-width: 62px;
@@ -140,8 +144,8 @@ body::before {
     justify-content: center;
     text-decoration: none;
     min-width: 240px;             /* Establece un tamaño mínimo para el botón */
-    font-size: 19px;              /* Tamaño de fuente */
-    margin: 5px auto;             /* Centra el botón y le da margen arriba y abajo */
+    font-size: 20px;              /* Tamaño de fuente */
+    margin: 7px auto;             /* Centra el botón y le da margen arriba y abajo */
     padding: 15px 25px;           /* Espaciado interno del botón */
     width: auto;                  /* El ancho depende del contenido */
     max-width: 250px;             /* Establece el ancho máximo */
@@ -170,12 +174,12 @@ body::before {
 }
 .nota{
     line-height: 1.2em;
-    font-size: 16px;
+    font-size: 1clamp(13px.1.2vw,16px);
     border-left: 8px solid #d32f2f; /* Rojo oscuro */
     padding-left: 10px;
     font-style: italic;
-    display: block;  /* Asegura que ocupe una línea completa */
-    margin: 10px 0;
+    display: flex;  /* Asegura que ocupe una línea completa */
+    margin: 10px 40px;
 }
 .notiwi{
     max-width: 600px; /* Ajusta el ancho según lo necesites */
@@ -186,22 +190,24 @@ body::before {
 
 }
 .botonesX{
+    min-width: 225px;
     cursor: pointer;
-background-color: rgb(29, 28, 28);
-color:#ffffff;
-text-shadow: #cac7c7;
-display: flex;
-align-items: center; /* Centra verticalmente */
-justify-content: center;
-text-decoration: none;
-padding: 10px 5px;
-font-size: 19px;
-text-align: left;
-margin: 20px 75px;
-width: auto;
-border-radius: 20px;
-box-shadow: 2px 4px 4px rgba(213, 212, 212, 0.468), 1px -3px 2px rgba(220, 214, 214, 0.722);
-
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 19px;
+  text-align: left;
+  margin: 20px 125px;
+  width: auto;
+  border-radius: 20px;
+  
+  color:#ffffff;
+  text-shadow: #cac7c7;
+  background-color: rgb(29, 28, 28);
+  box-shadow: 2px 4px 4px rgba(213, 212, 212, 0.468), 1px -3px 2px rgba(220, 214, 214, 0.722);
+  
 }
 .botonesX:hover {
     background-color: #272121;
@@ -218,6 +224,7 @@ box-shadow: 2px 4px 4px rgba(213, 212, 212, 0.468), 1px -3px 2px rgba(220, 214, 
 }
 
 .botonesIG{
+    min-width: 225px;
     cursor: pointer;
 background-color: rgba(233, 12, 163,1);
 background: linear-gradient(150deg, #a800d2fb,#ffae3c);
@@ -228,7 +235,7 @@ text-decoration: none;
 padding: 10px 5px;
 font-size: 19px;
 text-align: left;
-margin: 20px 75px;
+margin: 20px 125px;
 width: auto;
 border-radius: 20px;
 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -243,6 +250,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 
 .botonesYT{
+    min-width: 225px;
     cursor: pointer;
     background-color: #ffffff;
     /*#dd2c28;*/
@@ -254,7 +262,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     padding: 10px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -278,6 +286,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     margin: 20px 8px;
 }
 .botonesMPago{
+    min-width: 225px;
     cursor: pointer;
     background-color: #039dda;
     color: #FFFFFF;
@@ -288,7 +297,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     padding: 5px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -303,6 +312,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     transform: scale(0.98);
 }
 .botonesDiscord{
+    min-width: 225px;
     cursor: pointer;
     background-color: #5964f2;
     color: #FFFFFF;
@@ -310,10 +320,10 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 29px 5px;
+    padding: 28px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -330,6 +340,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     transform: scale(0.98);
 }
 .botonesMediafire{
+    min-width: 225px;
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
@@ -340,7 +351,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     padding: 29px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -358,6 +369,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     transform: scale(0.98);
 }
 .botonesAmazon {
+    min-width: 225px;
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
@@ -365,10 +377,10 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 30px 5px;
+    padding: 29px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
@@ -393,6 +405,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     justify-content: left;
 }
 .botonesPaypal {
+    min-width: 225px;
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
@@ -403,7 +416,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     padding: 18px 5px;
     font-size: 19px;
     text-align: left;
-    margin: 20px 75px;
+    margin: 20px 125px;
     width: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
