@@ -96,7 +96,7 @@ body::before {
     color: rgba(0, 0, 0, 1);
     background-color: rgb(247, 238, 238);
     border: none;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
     width: auto;
     margin: 20px auto; /* Asegura que el botón esté centrado */
@@ -124,7 +124,7 @@ body::before {
     background-color: rgba(92, 64, 51, 0.85);
     padding: 10px 20px;
     margin: 20px 125px; /* Margen vertical y horizontal */
-    border-radius: 15px;
+    border-radius: 20px;
     width:auto;
    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.722);
    font-size: 16px;
@@ -225,7 +225,7 @@ body::before {
   text-align: left;
   margin: 20px 125px;
   width: auto;
-  border-radius: 20px;
+  border-radius: 80px;
   
   color:#ffffff;
   text-shadow: #cac7c7;
@@ -261,7 +261,7 @@ font-size: 19px;
 text-align: left;
 margin: 20px 125px;
 width: auto;
-border-radius: 20px;
+border-radius: 80px;
 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .botonesIG:hover {
@@ -288,7 +288,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     background: linear-gradient(150deg, #ffffff,#ff3939);
 }
@@ -323,7 +323,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 
 }
@@ -349,7 +349,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .imageniwiDiscord{
@@ -377,7 +377,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .imageniwiMediafire{
@@ -406,7 +406,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .botonesAmazon:hover {
@@ -442,7 +442,7 @@ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
     text-align: left;
     margin: 20px 125px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),0px -1px 1px rgba(0, 0, 0, 0.722);
 }
 .botonesPaypal:hover {
